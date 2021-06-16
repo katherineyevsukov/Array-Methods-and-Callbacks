@@ -84,6 +84,12 @@ function getWinners(array, getFinalsCB) {
         }
     }); return winners
 }
+   // arrow function
+// function getWinners(array, getFinalsCB) {
+//     let winners = [];
+//     getFinalsCB(array).filter(games => games['Home Team Goals'] > games['Away Team Goals'] ? winners.push(games['Home Team Name']) : winners.push(games['Away Team Name']));
+//     return winners;
+// }
 
 console.log('task 4', getWinners(fifaData, getFinals))
 
